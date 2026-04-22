@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>General Knowledge Quiz</h1>
+    </header>
+    <main>
+        <div class="quiz-container">
+            <h2 id="question-text"></h2>
+            <ol>
+                <div class="opt-container">
+                <li><button class="option" id="a" onclick="checkAnswer('a', this)"></button></li>
+                <li><button class="option" id="b" onclick="checkAnswer('b', this)"></button></li>
+                </div>
+                <div class="opt-container">
+                <li><button class="option" id="c" onclick="checkAnswer('c', this)"></button></li>
+                <li><button class="option" id="d" onclick="checkAnswer('d', this)"></button></li>
+                </div>
+            </ol>
+        </div>
+    </main>
+    <div class="navigate">
+        <button onclick="prevData()">prev</button>
+    <button onclick="nextData()">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
