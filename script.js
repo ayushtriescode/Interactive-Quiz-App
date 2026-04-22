@@ -159,7 +159,7 @@ function checkAnswer(answer, btn) {
   } else {
     btn.style.backgroundColor = "#FF6961";
   }
-  const allButtons = document.querySelectorAll('.option');
+  const allButtons = document.querySelectorAll('.option, .nav-btn');
   allButtons.forEach(b => b.style.pointerEvents = "none");
 
   setTimeout(() => {
